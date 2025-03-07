@@ -1,9 +1,10 @@
+import { Button, Rating, Typography } from "@mui/material";
 import React from "react";
 
 const login = () => {
   return (
     <div>
-      <h2>Login Page</h2>
+      <Typography variant="h2">ورود</Typography>
       <form>
         <div>
           <label htmlFor="username">Username:</label>
@@ -21,7 +22,15 @@ const login = () => {
             name="password"
           />
         </div>
-        <button type="submit">Login</button>
+        <Button
+          variant="contained"
+          type="submit"
+          sx={{
+            borderRadius: 2,
+            boxShadow: 0,
+          }}>
+          {"ورود"}
+        </Button>
       </form>
     </div>
   );
